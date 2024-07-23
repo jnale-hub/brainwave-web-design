@@ -1,13 +1,15 @@
-import React from 'react'
-import { loading } from "../assets"
+import React from "react";
+import { loading } from "../assets";
 
 const Generating = ({ className }) => {
   return (
-    <div className={`flex items-center h-[3.5rem] px-6 bg-n-8/80 rounded-[1.7rem] ${className || ""} text-base`}>
-      <img className="size-5 mr-4" src={loading} alt="Loading" />
+    <div
+      className={`flex h-[3.5rem] items-center rounded-[1.7rem] bg-n-8/80 px-6 ${className || ""} text-base`}
+    >
+      <img className="mr-4 size-5" src={loading} alt="Loading" />
       AI is generating
     </div>
-  )
-}
+  );
+};
 
-export default Generating
+export default Generating;
